@@ -1,0 +1,297 @@
+body {
+  background-color: rgb(19, 19, 19);
+  margin: 0;
+  font-family: 'Quicksand', 'Arial';
+}
+header {
+  height: 200px;
+  color: rgba(204, 204, 204, 0.829);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 99%;
+  border: 1px solid rgba(128, 128, 128, 0.295);
+  margin:0;
+}
+h1 {
+  font-weight: 200;
+  font-size: 55px;
+}
+.allImages {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+.singleImage {
+  margin: 4px;
+  height: 300px;
+  width: 300px;
+  transition: box-shadow 100ms ease-in-out;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+}
+.singleImage:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,0,0,0.9) inset;
+}
+
+
+/* auf Bild klicken */
+.bigImagebody {
+  height: 100vH;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.d-none {
+  display: none;
+}
+.bigImageIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: auto;
+}
+.bigImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 950px;
+  
+}
+.bigImage {
+  object-fit: cover;
+  max-width: 900px;
+  border-radius: 5px;
+}
+.arrows {
+  height: 50px;
+  filter:invert(0.5);
+  opacity: 0.5;
+  transition: all 110ms ease-in-out;
+}
+.arrows2 {
+  display: none;
+  height: 50px;
+  filter:invert(0.5);
+  opacity: 0.5;
+  transition: all 110ms ease-in-out;
+  
+}
+.arrows:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.arrows2:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.exit{
+  height: 30px;
+  filter:invert(0.5);
+  opacity: 0.5;
+  transition: all 110ms ease-in-out;
+}
+.exit:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/* auf Bild klicken - Ende */
+
+
+footer {
+  height: 200px;
+  color: rgba(204, 204, 204, 0.829);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  filter: invert(0.5);
+  transition: all 110ms ease-in-out;
+}
+footer img:hover {
+  cursor: pointer;
+  filter: invert(0);
+}
+.smallVersion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  position: absolute;
+}
+
+/* auf Bild klicken */
+
+@media (max-width: 2000px) {
+  .smallVersion {
+    bottom: 30px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  
+  .bigImage {
+    max-width: 800px;
+  }
+  .bigImageContainer {
+    width: 850px;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  .bigImage {
+    max-width: 600px;
+  }
+  .bigImageContainer {
+    width: 650px;
+  }
+}
+
+
+@media (max-width: 825px) {
+  
+  .bigImageContainer {
+    
+    width: 600px;
+  }
+  .arrows {
+    display: none;
+  }
+  .arrows2 {
+    display: block !important;
+    height: 40px;
+  }
+  .smallVersion {
+    justify-content: space-between;
+  }
+  
+}
+@media (max-width: 620px) {
+  .bigImage {
+    max-width: 450px;
+  }
+  .bigImageContainer {
+    width: 450px;
+  }
+}
+
+
+@media (max-width: 475px) {
+  .bigImage {
+    max-width: 400px;
+  }
+  .bigImageContainer {
+    width: 400px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .bigImage {
+    max-width: 300px;
+  }
+  .bigImageContainer {
+    width: 300px;
+  }
+  .smallVersion {
+    width: 250px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .bigImage {
+    max-width: 250px;
+  }
+  .bigImageContainer {
+    width: 250px;
+  }
+  .smallVersion {
+    width: 200px;
+  }
+}
+
+/* auf Bild klicken - Ende */
+
+
+
+
+@media (max-width: 675px) {
+  header {
+    height: 150px;
+  }
+  footer {
+    height: 150px;
+}
+.singleImage {
+  height: 200px;
+  width: 200px;
+}
+
+
+}
+@media (max-width: 475px) {
+  h1 {
+  font-size: 45px;
+}
+.singleImage {
+  height: 150px;
+  width: 150px;
+}
+footer img {
+  height: 40px;
+}
+}
+
+
+@media (max-width: 375px) {
+  header {
+    height: 120px;
+  }
+  h1 {
+    font-size: 35px;
+}
+.singleImage {
+  height: 110px;
+  width: 110px;
+}
+footer img {
+  height: 35px;
+}
+footer {
+  height: 120px;
+}
+}
+
+
+@media (max-width: 295px) {
+  header {
+    height: 100px;
+  }
+.singleImage {
+  height: 90px;
+  width: 90px;
+}
+footer img {
+  height: 30px;
+}
+footer {
+  height: 100px;
+}
+}
